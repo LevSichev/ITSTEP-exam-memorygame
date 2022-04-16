@@ -11,47 +11,6 @@
     ■ Статистика:
         • Время игры;
         • Количество переворотов карт.
-
-    TODO:
-        -2d array (2d vector?) for the field
-        --field will be made out of chars that represent different cards and also
-        their undersides, like this: 
-        *****
-        *****
-        *****
-        *****
-        *****
-        --2 cards open:
-        *a***
-        ****a
-        *****
-        *****
-        *****
-        
-        general gameplay: (mostly written in main)
-        -start tracking time 
-        -get 2 inputs
-        -change chars in array at these positions
-        -card flip amount++
-        -if 2 chars match:
-        --"re-render" the header, the array and the prompt to enter the next pair
-        --play "correct" sound
-        -if 2 chars don't match: 
-        --"re-render" the header, the array and the prompt to enter the next pair
-        --change the chars at input coordinates back to default
-        --"re-render" the header, the array and the prompt to enter the next pair 
-           but make the field clean again, after a few seconds
-        -repeat until all chars are revealed (call field check function) 
-        -cout time and amount of card flips 
-
-        functions to: 
-        -Re-render the screen
-        -Check if the whole field is revealed
-
-        amount of pairs of cards is sizeX*sizeY/2
-        cards are different chars
-        usable chars range from 33 to 253, which is 220 chars, which is at most a 20x20 field
-
 */
 #include <iostream>
 #include <ctime>
